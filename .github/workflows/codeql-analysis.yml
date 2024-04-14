@@ -27,6 +27,8 @@ jobs:
         config: |
           paths-ignore:
             - 'data/static/codefixes'
+            - '**/*.md'
+            - '**/*.txt'
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
     - name: Perform CodeQL Analysis
